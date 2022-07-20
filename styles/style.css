@@ -376,7 +376,14 @@ media queries
         margin-bottom: 0px;
         border: 0px solid white;
         background-color: #DD0000;
+    }
 
+    .second-section .menu .btn a {
+        font-size: 19px;
+    }
+
+    .second-section .menu .upc {
+        border: 1px solid #DD0000;
     }
 
     /*--------
@@ -529,9 +536,6 @@ tab devices
         transform: scale(1.2) translateX(10px) translateY(20px);
     }
 
-
-
-
     /*----------
      second section
      ---------- */
@@ -544,6 +548,10 @@ tab devices
     /*-----------
     menu section
     ------------- */
+    .second-section .menu .btn a {
+        font-size: 16px;
+    }
+
     .menu {
         display: flex;
         flex-wrap: nowrap;
@@ -587,6 +595,7 @@ tab devices
         color: white;
     }
 
+
     /*--------
     transfer section
     ------------- */
@@ -594,6 +603,10 @@ tab devices
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 24px;
+    }
+
+    .matches .match {
+        height: 250px;
     }
 
     .blog {
@@ -643,15 +656,21 @@ tab devices
         align-items: center;
         justify-content: space-between;
         width: 100%;
-        padding: 15px 45px;
+        padding: 15px 10px;
     }
 
+    .navigation-bar ul {
+        text-align: center;
+        padding: 10px 20px 10px 0px;
+    }
 
     .navigation-bar ul li {
         list-style: none;
         display: inline-block;
         position: relative;
-        margin: 0 20px;
+        align-items: center;
+        text-align: center;
+        margin: 0 20px 20px;
     }
 
     .navigation-bar ul li a {
@@ -676,39 +695,25 @@ tab devices
 /*--------- 
 menu section two
  ---------*/
-.second-menu {
-    background-color: black;
-    padding: 30px;
-    border-radius: 10px;
-    height: 250px;
-}
 
-.second-menu button {
-    display: block;
-    width: 250px;
-    padding: 17px 39px;
-    margin-bottom: 30px;
-    border-radius: 10px;
-}
-
-.second-menu .upc-btn {
+.menu .upc {
     border: 0px solid white;
     background-color: #DD0000;
 
 }
 
-.second-menu .normal-btn {
+.menu .normal-btn {
     background-color: white;
 }
 
-.second-menu .normal-btn a {
+.menu .normal-btn a {
     font-size: 20px;
     font-weight: 500;
     text-decoration: none;
     color: #161616;
 }
 
-.second-menu .upc-btn a {
+.menu .upc a {
     font-size: 20px;
     font-weight: 600;
     color: white;
@@ -719,19 +724,10 @@ menu section two
  match section
  ----------  */
 
-.matches {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 24px;
-}
+.matches .match {
+    max-width: 395px;
+    max-height: 242px;
 
-.match {
-    width: 395px;
-    height: 242px;
-    border: 1px solid #E8E8E8;
-    border-radius: 10px;
-    margin-left: 24px;
-    margin-bottom: 24px;
 }
 
 .match-image {
@@ -745,7 +741,7 @@ menu section two
 .match img {
     width: 100px;
     height: 60px;
-
+    border-radius: 0px;
 }
 
 .match-info {
